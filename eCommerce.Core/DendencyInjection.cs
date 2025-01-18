@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 
 
-namespace eCommerce.Infrastructure
+namespace eCommerce.Core;
 
     public static class DependencyInjection
 {
@@ -10,7 +10,7 @@ namespace eCommerce.Infrastructure
     /// </summary>
     /// <param name="services"></param>
     /// <returns></returns>
-    public static IServiceCollection AddInfrastructure(this IServiceCollection services)
+    public static IServiceCollection AddCore(this IServiceCollection services)
     {
         //TO DO: Add services to the IoC container
         //Infrastructure services often include data access, caching and other low-level components.
@@ -18,6 +18,6 @@ namespace eCommerce.Infrastructure
         return services;
     }
 
-} 
+}
 
 }
