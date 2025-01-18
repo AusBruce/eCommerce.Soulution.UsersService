@@ -18,7 +18,9 @@ namespace eCommerce.Infrastructure
         //Infrastructure services often include data access, caching and other low-level components.
 
 
-        services.AddSingleton<IUsersRepository, UsersRepository>();
+      
+
+        services.AddTransient<IUsersRepository, UsersRepository>();
 
         return services;
     }
