@@ -23,15 +23,28 @@ namespace eCommerce.Infrastructure.Repositories
         return user;
     }
 
-    public async Task<ApplicationUser?> GetUserByEmailAndPassword(string? email, string? password)
-    {
-        return new ApplicationUser()
+
+
+
+
+
+
+
+
+        public async Task<ApplicationUser?> GetUserByEmailAndPassword(string? email, string? password)
         {
-            UserID = Guid.NewGuid(),
-            Email = email,
-            Password = password,
-            PersonName = "Person name",
-            Gender = GenderOptions.Male.ToString()
-        };
-    }
-} }
+            return new ApplicationUser()
+            {
+                UserID = Guid.NewGuid(),
+                Email = email,
+                Password = password,
+                PersonName = "Person name",
+                Gender = GenderOptions.Male.ToString()
+            };
+        }
+
+    } 
+
+
+
+}
