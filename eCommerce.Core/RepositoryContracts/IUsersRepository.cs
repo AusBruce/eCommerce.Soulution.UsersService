@@ -1,6 +1,6 @@
 ﻿using eCommerce.Core.Entities;
 
-namespace eCommerce.Core.RepositoryContracts
+namespace eCommerce.Core.RepositoryContracts { 
 
 
 /// <summary>
@@ -23,4 +23,4 @@ public interface IUsersRepository
     /// <param name="password"></param>
     /// <returns></returns>
     Task<ApplicationUser?> GetUserByEmailAndPassword(string? email, string? password);
-}
+} }

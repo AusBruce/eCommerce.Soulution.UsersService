@@ -2,7 +2,7 @@
 
 using eCommerce.Core.DTO;
 
-namespace eCommerce.Core.ServiceContracts
+namespace eCommerce.Core.ServiceContracts { 
 
 /// <summary>
 /// Contract for users service that contains use cases for users
@@ -23,4 +23,4 @@ public interface IUsersService
     /// <param name="registerRequest"></param>
     /// <returns></returns>
     Task<AuthenticationResponse?> Register(RegisterRequest registerRequest);
-}
+} }

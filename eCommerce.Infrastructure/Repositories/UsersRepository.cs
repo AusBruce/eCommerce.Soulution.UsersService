@@ -2,7 +2,8 @@
 using eCommerce.Core.Entities;
 using eCommerce.Core.RepositoryContracts;
 
-namespace eCommerce.Infrastructure.Repositories
+namespace eCommerce.Infrastructure.Repositories 
+{ 
 
     internal class UsersRepository : IUsersRepository
 {
@@ -25,4 +26,4 @@ namespace eCommerce.Infrastructure.Repositories
             Gender = GenderOptions.Male.ToString()
         };
     }
-}
+} }

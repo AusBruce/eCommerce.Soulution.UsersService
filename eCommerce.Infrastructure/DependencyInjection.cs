@@ -3,7 +3,8 @@ using eCommerce.Infrastructure.Repositories;
 using Microsoft.Extensions.DependencyInjection;
 
 
-namespace eCommerce.Infrastructure
+namespace eCommerce.Infrastructure 
+{ 
 
     public static class DependencyInjection
 {
